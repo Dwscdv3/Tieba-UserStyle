@@ -1,0 +1,217 @@
+/**百度贴吧::清爽版
+ * 2.2.0
+ * by Dwscdv3
+ * 
+ * 备注：
+ *   本样式的主要目的是屏蔽掉广告及特权内容，对视觉效果没有多少改动
+ *   一举橙名因其有标识老吧友的意义，故未和谐
+ */
+
+@-moz-document url-prefix("http://tieba.baidu.com/f?"), url-prefix("https://tieba.baidu.com/f?"), url-prefix("http://tieba.baidu.com/p/"), url-prefix("https://tieba.baidu.com/p/") {
+/* 热门推荐 */
+.thread_recommend,
+/* 搜索栏下方广告条 */
+#pb_adbanner,
+/* 伪装帖 */
+.l_post:not([data-field]),
+.p_postlist>[data-daid],
+.l_post[data-field*='"user_name":"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87"'],
+/* 无用菜单 */
+.share_btn_wrapper,
+#pagelet_aside\/pagelet\/my_tieba,
+.app_download_box,
+.p_share_ding,
+.right_section,
+.d_icons, .icon_wrap, /* 勋章 */
+#pagelet_encourage-celebrity\/pagelet\/celebrity,
+#pagelet_encourage-appforum\/pagelet\/my_app,
+#pagelet_platform-official\/pagelet\/official_aside .my_app,
+#pagelet_frs-aside\/pagelet\/hottopic,
+[data-original-title="贴吧特权"],
+.tb_poster_placeholder,
+.tbui_fbar_props,
+.firework-wrap,
+.icon_game {
+    display: none !important;
+}
+}
+
+@-moz-document url-prefix("http://tieba.baidu.com/p/"), url-prefix("https://tieba.baidu.com/p/") {
+/* 挽尊 */
+.save_face_bg,
+.save_face_bg_2,
+/* 多余的入口 */
+#tofrs_up {
+    display: none !important;
+}
+
+/* 去掉侧边栏，以及相关 hack */
+.right_section {
+    display: none !important;
+}
+.left_section {
+    margin: 0 auto;
+    float: none;
+}
+#pb_content {
+    margin: 0 auto;
+    width: 740px !important;
+}
+.content {
+    width: 740px;
+    background: none;
+}
+#tb_nav,
+#thread_theme_5,
+#thread_theme_7,
+.pb_footer {
+    width: 740px;
+}
+#tb_rich_poster {
+    margin-left: 8px;
+}
+.card_top_right {
+    margin: 15px 15px 0 0;
+}
+
+/* 发帖背景 */
+.post_bubble_top,
+.post_bubble_bottom {
+    display: none !important;
+}
+.post_bubble_middle {
+    background: none !important;
+    padding: 0;
+    width: auto;
+}
+}
+
+@-moz-document url("http://tieba.baidu.com/"), url("https://tieba.baidu.com/"), url-prefix("http://tieba.baidu.com/?"), url-prefix("https://tieba.baidu.com/?"), url-prefix("http://tieba.baidu.com/index.html"), url-prefix("https://tieba.baidu.com/index.html"), url-prefix("http://tieba.baidu.com/index.html?"), url-prefix("https://tieba.baidu.com/index.html?") {
+#spage_game_tab_wrapper,
+#spage_liveshow_slide,
+#plat_act_wrapper,
+.top-sec,
+.r-top-sec,
+.r-right-sec {
+    display: none !important;
+}
+
+.page-container .r-left-sec,
+.sub_nav_wrap,
+.n_right {
+    width: 100% !important;
+}
+
+.sub_nav_wrap {
+    background: white !important;
+}
+}
+
+@-moz-document domain("tieba.baidu.com") {
+#spage-tbshare-container,
+#fixed_bar,
+.u_member,
+.u_mytbmall,
+.u_game,
+.u_blue,
+.u_bdhome,
+.tbui_fbar_nobottle,
+.poster_head_surveillance,
+.bdfengyun,
+li[data-field='{"sugType":"operation_title","sugValue":""}'],
+li[data-field*='"sugType":"operation_item"'],
+.pre_icon_wrap,
+.user_score,
+.user_card_vip_tips,
+/* 求婚 */
+.user-visit-card-marriage-propose {
+    display: none !important;
+}
+
+/* 还原会员红名 */
+.member_thread_title_frs a {
+    color: #2d64b3 !important;
+}
+.threadlist_title a:visited {
+    color: #653096 !important;
+}
+.vip_red, .vip-red, .vip_red:hover, .vip-red:hover, .vip_red:visited, .vip-red:visited {
+    color: #2d64b3 !important;
+}
+.threadlist_bright .threadlist_author a.vip_red {
+    color: #999 !important;
+}
+}
+
+@-moz-document url-prefix("http://tieba.baidu.com/f?"), url-prefix("https://tieba.baidu.com/f?") {
+#pagelet_frs-list\/pagelet\/thread_footer,
+#pagelet_frs-header\/pagelet\/head_content_middle,
+#pagelet_frs-footer\/pagelet\/extension,
+#thread_list>li:not([data-field]),
+#j_navtab_game,
+.tbui_placeholder,
+.gift-goin,
+/* 广告吧头 */
+#plat_recom_carousel {
+    display: none !important;
+}
+
+#thread_list>li.thread_top_list_folder {
+    display: list-item !important;
+}
+
+/* 还原会员图标至默认图标 */
+.threadlist_bright .no_icon_author .icon_author {
+    width: 20px;
+    background-image: url(//tb2.bdstatic.com/tb/img/interview_z_ca7e018.png);
+    background-position: -30px -60px;
+}
+
+/* 吧头像半嵌入顶部，调整搜索栏位置 */
+img[src="//tb1.bdstatic.com/tb/cms/frs/bg/default_head20141014.jpg"] {
+    display: none !important;
+}
+.head_inner .search_logo {
+    margin-left: 112px;
+}
+.suggestion .forum_right {
+    width: calc(100% - 40px);
+}
+.search_bright .search_ipt {
+    width: 310px !important;
+}
+@media screen and (min-width: 1280px) {
+    .search_main .search_form {
+        width: 814px !important;
+    }
+    
+    .senior-search-link {
+        left: 672px;
+    }
+}
+.j_search_form {
+    pointer-events: none;
+}
+.j_search_form * {
+    pointer-events: auto;
+}
+}
+
+@-moz-document url-prefix("http://tieba.baidu.com/home/"), url-prefix("https://tieba.baidu.com/home/") {
+/* 爱玩的吧 */
+.ihome_game_group,
+/* T豆、蓝钻 */
+.userinfo_scores,
+/* 我的礼物 */
+.ihome-aside-gift-center,
+/* 求婚 */
+.userinfo-marry,
+/* 勋章 */
+.userinfo_honor,
+/* 成就 */
+.nav_achieve,
+/* 漂流瓶 */
+.nav_bottle {
+    display: none !important;
+}
+}
