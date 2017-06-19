@@ -84,6 +84,16 @@
     padding: 0;
     width: auto;
 }
+
+/* 会员楼主标识 */
+.louzhubiaoshi_wrap .beMember_fl {
+	background: url(http://tb2.bdstatic.com/tb/static-ppb/img/pb_css_pic_a630a08.png) no-repeat -172px -120px;
+}
+
+/* 会员红标题 */
+.member_thread_title_pb {
+    color: black !important;
+}
 }
 
 @-moz-document url("http://tieba.baidu.com/"), url("https://tieba.baidu.com/"), url-prefix("http://tieba.baidu.com/?"), url-prefix("https://tieba.baidu.com/?"), url-prefix("http://tieba.baidu.com/index.html"), url-prefix("https://tieba.baidu.com/index.html"), url-prefix("http://tieba.baidu.com/index.html?"), url-prefix("https://tieba.baidu.com/index.html?") {
