@@ -1,5 +1,5 @@
 /**百度贴吧::清爽版
- * 2.2.2
+ * 2.3.0
  * by Dwscdv3
  * 
  * 备注：
@@ -41,6 +41,10 @@
 /* 挽尊 */
 .save_face_bg,
 .save_face_bg_2,
+/* 勋章 */
+.achievement_medal_section,
+/* 铭牌 */
+.d_nameplate,
 /* 多余的入口 */
 #tofrs_up {
     display: none !important;
