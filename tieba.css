@@ -1,5 +1,5 @@
 /**百度贴吧::清爽版
- * 2.2.1
+ * 2.2.2
  * by Dwscdv3
  * 
  * 备注：
@@ -17,6 +17,7 @@
 .p_postlist>[data-daid],
 .l_post[data-field*='"user_name":"\\u4e3f\\u5929\\u4e36\\u4e4b\\u6b87"'],
 /* 无用菜单 */
+#j_navtab_wanle,
 .share_btn_wrapper,
 #pagelet_aside\/pagelet\/my_tieba,
 .app_download_box,
@@ -91,6 +92,7 @@
 }
 
 /* 会员红标题 */
+.core_title_txt.vip_red,
 .member_thread_title_pb {
     color: black !important;
 }
