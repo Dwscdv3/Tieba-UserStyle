@@ -1,13 +1,12 @@
+@-moz-document url-prefix("http://tieba.baidu.com/f?"), url-prefix("https://tieba.baidu.com/f?"), url-prefix("http://tieba.baidu.com/p/"), url-prefix("https://tieba.baidu.com/p/") {
 /**百度贴吧::清爽版
- * 2.3.0
+ * 2.4.0
  * by Dwscdv3
  * 
  * 备注：
  *   本样式的主要目的是屏蔽掉广告及特权内容，对视觉效果没有多少改动
  *   一举橙名因其有标识老吧友的意义，故未和谐
  */
-
-@-moz-document url-prefix("http://tieba.baidu.com/f?"), url-prefix("https://tieba.baidu.com/f?"), url-prefix("http://tieba.baidu.com/p/"), url-prefix("https://tieba.baidu.com/p/") {
 /* 热门推荐 */
 .thread_recommend,
 /* 搜索栏下方广告条 */
@@ -63,14 +62,14 @@
     width: 740px !important;
 }
 .content {
-    width: 740px;
+    width: 740px !important;
     background: none;
 }
 #tb_nav,
 #thread_theme_5,
 #thread_theme_7,
 .pb_footer {
-    width: 740px;
+    width: 740px !important;
 }
 #tb_rich_poster {
     margin-left: 8px;
@@ -124,6 +123,9 @@
 }
 
 @-moz-document domain("tieba.baidu.com") {
+body>.clearfix,
+/* ↑以上规则可能有副作用 */
+#pop_frame,
 #spage-tbshare-container,
 #fixed_bar,
 .u_member,
@@ -160,6 +162,8 @@ li[data-field*='"sugType":"operation_item"'],
 }
 
 @-moz-document url-prefix("http://tieba.baidu.com/f?"), url-prefix("https://tieba.baidu.com/f?") {
+.head_ad_tag,
+#pagelet_live\/pagelet\/live,
 #pagelet_frs-list\/pagelet\/thread_footer,
 #pagelet_frs-header\/pagelet\/head_content_middle,
 #pagelet_frs-footer\/pagelet\/extension,
